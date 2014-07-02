@@ -6,6 +6,9 @@
 		background-color: yellow;
 	}
 }*/
+ul {
+	padding: 0;
+}
 header{
 	background-color: blue;
 }
@@ -51,6 +54,7 @@ footer {
 	footer{
 		text-align: right;
 	}
+
 	nav ul li {
 		display: block;
 		width: 100%;
