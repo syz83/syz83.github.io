@@ -24,11 +24,28 @@ header ul {
     padding: 0;
     margin: 0;
 }
-header li {
+/*header li {
     display: inline-block;
     width: 25%;
     float: left;
     text-align: center;
+}*/
+.navbar-default {
+background-color: transparent;
+border-color: transparent;
+}
+.navbar {
+    border-radius: 0px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #555;
+background-color: transparent;
+}
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 0px;
+border: 1px solid transparent;
 }
 header li a {
 	color: rgba(82, 160, 231, .5);
