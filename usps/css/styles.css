@@ -13,6 +13,7 @@ body {
 }
 header {
     background-color: #c1e6fc;
+    position: relative;
 }
 header img {
     width: 250px;
@@ -23,6 +24,11 @@ header img {
 header ul {
     padding: 0;
     margin: 0;
+}
+#sizer{
+    position: absolute;
+    top:10px
+    right 10px;
 }
 /*header li {
     display: inline-block;

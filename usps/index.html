@@ -9,6 +9,7 @@
 	<body>
 		<header>
 			<img src="img/logo.png">
+
 <!-- 			<div class="container">
 				<img src="img/logo.png">
 				<nav>
@@ -54,7 +55,12 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-		</header>
+
+		<div id="sizer">
+			<button data-size="big">Make Bigger!</button>
+			<button data-size="sml">Shrink!</button>
+		</div>
+</header>
 
 
 		<div id="hero">
@@ -100,6 +106,36 @@
 
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
 
+			var x = 0;
+
+			$("#sizer button").on({
+				click: function(e){
+					var $this = $(e.currentTarget);
+					// console.log($this);
+					if($this.data("size") == "big"){
+						x = x + 10;
+						$("body").css("font-size", x + "%");
+							
+					}
+					else{
+						x = x - 10;
+						$("body").css("font-size", x + "%");
+					}
+				}
+			});
+
+			// $("header").on({
+			// 	mouseover: function(e){
+			// 		$(e.currentTarget).css("background-color", "yellow");
+			// 	},
+			// 	mouseleave: function(e){
+			// 		$(e.currentTarget).css("background-color", "blue");
+			// 	}
+			// })
+		});
+	</script>
 	</body>
 <html>

@@ -22,15 +22,32 @@ ul#myRoundAbout{
 	z-index: 1;
 }
 #content article {
-	width: 33.3333%;
+	width: 31.3333%;
 	float: left;
+	padding: 10px 20px;
+}
+#content article:nth-child(2){
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+#content article:first-child{
+	padding: 0 0 10px 10px;
+}
+#content article:last-child{
+	padding: 0 0 10px 10px;
 }
 #content article img{
 	max-width: 100%;
 }
 #content2 article {
-	width: 50%;
+	/*width: 50%;*/
 	float: left;
+}
+#content2 article:first-child {
+	width: 60%;
+}
+#content2 article:last-child {
+	width: 40%;
 }
 #content2 article img{
 	max-width: 100%;
@@ -68,4 +85,8 @@ ul#myRoundAbout{
 	#content2 article img{
 		max-width: 100%;
 	}
+	.body4 article {
+		width: 100%;
+	}
+
 }
